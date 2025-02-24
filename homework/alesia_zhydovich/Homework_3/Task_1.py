@@ -1,5 +1,5 @@
-first_number = float(input ('Text first number, a: '))
-second_number = float(input ('Text second number, b: '))
+first_number = float(input('Text first number, a: '))
+second_number = float(input('Text second number, b: '))
 
 addition = first_number + second_number
 subtraction = first_number - second_number
