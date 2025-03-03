@@ -8,7 +8,7 @@ new_text = []
 
 for word in words:
     if word.isalpha():
-       word += 'ing'
+        word += 'ing'
     else:
         last_symbol = word[-1]
         first_part_of_word = word[:-1]
