@@ -6,9 +6,9 @@ results = [
 ]
 
 def counting(result):
-    id = result.index(":") + 2
-    number = int(result[id:]) + 10
+    element_id = result.index(":") + 2
+    number = int(result[element_id:]) + 10
     print('Результат сложения:', number)
-    
-for element  in results:
+
+for element in results:
     counting(element)
