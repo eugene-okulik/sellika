@@ -5,10 +5,12 @@ results = [
     'Результат работы программы: 2'
 ]
 
+
 def counting(result):
     element_id = result.index(":") + 2
     number = int(result[element_id:]) + 10
     print('Результат сложения:', number)
+
 
 for element in results:
     counting(element)
