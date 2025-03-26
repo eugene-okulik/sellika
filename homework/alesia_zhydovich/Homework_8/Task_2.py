@@ -1,6 +1,6 @@
 def print_fibonacci(index):
     first = 0
-    second  = 1
+    second = 1
     count = 1
     while count <= 100001:
         if count in index:
