@@ -6,6 +6,6 @@ temperatures = [
 hot_days = list(filter(lambda x: x > 28, temperatures))
 
 print(hot_days)
-print("Max temperature :",  max(hot_days))
-print("Min temperature :",  min(hot_days))
+print("Max temperature :", max(hot_days))
+print("Min temperature :", min(hot_days))
 print("Average temperature :", round(sum(hot_days) / len(hot_days), 2))
