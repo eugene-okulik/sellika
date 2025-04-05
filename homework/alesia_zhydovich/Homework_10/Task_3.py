@@ -1,5 +1,5 @@
-first = int(input('Text first number: ' ))
-second = int(input('Text second number: ' ))
+first = int(input('Text first number: '))
+second = int(input('Text second number: '))
 
 
 def operation_selector(func):
