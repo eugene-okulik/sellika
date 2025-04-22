@@ -2,14 +2,12 @@ class Book:
     page_material = 'paper'
     text_available = True
 
-
     def __init__(self, title, author, page_numbers, isbn, reserved):
         self.title = title
         self.author = author
         self.page_numbers = page_numbers
         self.isbn = isbn
         self.reserved = reserved
-
 
     def print_info(self):
         base_info = (
@@ -38,7 +36,6 @@ class WorkBook(Book):
         super().__init__(title, author, page_numbers, isbn, reserved)
         self.subject = subject
         self.level = level
-
 
     def print_info(self):
         base_info = (
