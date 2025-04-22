@@ -2,19 +2,21 @@ class Book:
     page_material = 'paper'
     text_available = True
 
-
     def __init__(self, title, author, page_numbers, isbn, reserved):
-            self.title = title
-            self.author = author
-            self.page_numbers = page_numbers
-            self.isbn = isbn
-            self.reserved = reserved
-
+        self.title = title
+        self.author = author
+        self.page_numbers = page_numbers
+        self.isbn = isbn
+        self.reserved = reserved
 
     def print_info(self):
-        base_info = f'Название: {self.title}, Автор: {self.author}, страниц: {self.page_numbers}, материал: {Book.page_material}'
+        base_info = (
+            f'Название: {self.title}, '
+            f'Автор: {self.author}, '
+            f'страниц: {self.page_numbers}, '
+            f'материал: {self.page_material}'
+        )
         print(base_info + ', зарезервирована' if self.reserved else base_info)
-
 
 books = [
     Book('Math for child', 'Assa S', 34, 'ISBN0023456', False),
@@ -34,16 +36,20 @@ class WorkBook(Book):
         self.subject = subject
         self.level = level
 
-
     def print_info(self):
-        base_info = f'Название: {self.title}, Автор: {self.author}, страниц: {self.page_numbers},  предмет: {self.subject}, класс: {self.level}'
+        base_info =(
+            f'Название: {self.title}, '
+            f'Автор: {self.author}, '
+            f'страниц: {self.page_numbers}, '
+            f'предмет: {self.subject}, '
+            f'класс: {self.level}'
+        )
         print(base_info + ', зарезервирована' if self.reserved else base_info)
 
-
 workbooks = [
-    WorkBook('Алгебра', 'Иванов', 200, 'ISBN0001', False, 'Математика', 9),
-    WorkBook('История Беларуси', 'Петров', 180, 'ISBN0002', False, 'История', 8),
-    WorkBook('География', 'Сидоров', 150, 'ISBN0003', True, 'География', 7)
+    WorkBook('Алгебра', 'Жук', 200, 'ISBN001', False, 'Математика', 9),
+    WorkBook('История', 'Гусь', 180, 'ISBN002', False, 'История', 8),
+    WorkBook('География', 'Судак', 150, 'ISBN003', True, 'География', 7)
 ]
 
 for wb in workbooks:
