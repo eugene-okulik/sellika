@@ -2,12 +2,14 @@ class Book:
     page_material = 'paper'
     text_available = True
 
+
     def __init__(self, title, author, page_numbers, isbn, reserved):
         self.title = title
         self.author = author
         self.page_numbers = page_numbers
         self.isbn = isbn
         self.reserved = reserved
+
 
     def print_info(self):
         base_info = (
@@ -17,6 +19,7 @@ class Book:
             f'материал: {self.page_material}'
         )
         print(base_info + ', зарезервирована' if self.reserved else base_info)
+
 
 books = [
     Book('Math for child', 'Assa S', 34, 'ISBN0023456', False),
@@ -36,8 +39,9 @@ class WorkBook(Book):
         self.subject = subject
         self.level = level
 
+
     def print_info(self):
-        base_info =(
+        base_info = (
             f'Название: {self.title}, '
             f'Автор: {self.author}, '
             f'страниц: {self.page_numbers}, '
@@ -45,6 +49,7 @@ class WorkBook(Book):
             f'класс: {self.level}'
         )
         print(base_info + ', зарезервирована' if self.reserved else base_info)
+
 
 workbooks = [
     WorkBook('Алгебра', 'Жук', 200, 'ISBN001', False, 'Математика', 9),
